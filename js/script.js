@@ -30,4 +30,16 @@ const cardsSpace = document.getElementById('cards-space');
 for (let i = 0; i < team.length; i++){
     const currentTeammate = team[i];
     console.log(currentTeammate);
+
+    cardsSpace.innerHTML += `
+    <div class="col-4">
+    <div class="card">
+        <img src="img/${currentTeammate.image}" class="card-img-top" alt="${currentTeammate.fullName}">
+        <div class="card-body text-center">
+          <h5 class="card-title">${currentTeammate.fullName}</h5>
+          <sub class="card-text">${currentTeammate.role}</sub>
+        </div>
+    </div>
+    </div>
+    `;
 }
