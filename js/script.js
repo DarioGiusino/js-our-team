@@ -26,11 +26,14 @@ const team = [
 // # Recupero elemento dal DOM da riempire
 const cardsSpace = document.getElementById('cards-space');
 
-// Stampo in console info del team per ogni membro
+// # Per ogni membro nella lista...
 for (let i = 0; i < team.length; i++){
+    //variabile che cicla all'interno del team
     const currentTeammate = team[i];
+    //stampo in console le info di ogni membro
     console.log(currentTeammate);
 
+    //inietto in pagina una colonna con una card contenente ogni volta le informazioni ciclate per ogni membro
     cardsSpace.innerHTML += `
     <div class="col-4">
     <div class="card">
