@@ -12,3 +12,16 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede e rendere la pagina gradevole (potete usare lo screen in allegato come spunto
 */
+
+// # Array di oggetti con i dati forniti
+const team = [
+    {fullName: 'Wayne Barnett', role: 'Founder & CEO', image: 'wayne-barnett-founder-ceo.jpg' },
+    {fullName: 'Angela Caroll', role: 'Chief Editor', image: 'angela-caroll-chief-editor.jpg' },
+    {fullName: 'Walter Gordon', role: 'Office Manager', image: 'walter-gordon-office-manager.jpg' },
+    {fullName: 'Angela Lopez', role: 'Social Media Manager', image: 'angela-lopez-social-media-manager.jpg' },
+    {fullName: 'Scott Estrada', role: 'Developer', image: 'scott-estrada-developer.jpg' },
+    {fullName: 'Barbara Ramos', role: 'Graphic Designer', image: 'barbara-ramos-graphic-designer.jpg' }
+]
+
+// # Recupero elemento dal DOM da riempire
+const cardsSpace = document.getElementById('cards-space');
