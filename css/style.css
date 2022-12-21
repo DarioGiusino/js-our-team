@@ -12,3 +12,12 @@ main{
     color: #0d1117;
 }
 
+/* # main */
+/* card img */
+main .card{
+    transition: transform 0.2s linear;
+}
+
+main .card:hover{
+    transform: scale(1.02);
+}
