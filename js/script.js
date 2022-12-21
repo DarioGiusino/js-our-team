@@ -25,3 +25,9 @@ const team = [
 
 // # Recupero elemento dal DOM da riempire
 const cardsSpace = document.getElementById('cards-space');
+
+// Stampo in console info del team per ogni membro
+for (let i = 0; i < team.length; i++){
+    const currentTeammate = team[i];
+    console.log(currentTeammate);
+}
